@@ -1,0 +1,10 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "go build -tags web -o veloera"
+
+[deploy]
+startCommand = "./veloera"
+healthcheckPath = "/"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10

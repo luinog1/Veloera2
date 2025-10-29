@@ -16,3 +16,5 @@ tiktoken_cache
 .history/
 .kiro/
 .venv
+*.md
+RAILWAY_DEPLOYMENT.md
